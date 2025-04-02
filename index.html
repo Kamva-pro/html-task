@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kamvelihle Fatman</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 	<header> 
 		<nav>
-			<div class="logo">KF</div>
+			<div class="logo">Kamvelihle Fatman</div>
 			<ul class="nav-links">
 				<li class="nav-link">Home</li>
 				<li class="nav-link">About</li>
@@ -16,8 +17,13 @@
 			</ul>
 		</nav>
 		<section id="hero">
+			<video autoplay playsinline muted loop id="bg-video">
+			  <source src="assets/images/bg-video.mp4" type="video/mp4">
+			</video>
+			<div class="hero-content">
 			<h1>Welcome To My Portfolio</h1>
 			<button>About me</button>
+		</div>
 		</section>
 	</header>
 
@@ -40,7 +46,24 @@
 		</section>
 
 		<footer id="contact">
-			
+			<div class="footer-tab">
+				<h3>Quick Navigation</h3>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+				</ul>
+			</div>
+
+			<div class="footer-tab">
+				<h3>Social Links</h3>
+				<div id="linkedin"></div>
+				<div id="github"></div>
+				<div id="medium"></div>
+				<div id="dev-community"></div>
+			</div>
+
+			<div class="footer-tab">
+			</div>
 		</footer>
 	</main>
 </body>
