@@ -93,12 +93,12 @@ video{
 }
 
 .button{
-	padding: 12px 48px;
+	padding: 12px 36px;
 	color: black;
 	background-color: aquamarine;
 	border: none;
 	border-radius: 8px;
-	font-size: 20px;
+	font-size: 18px;
 	cursor: pointer;
 }
 
@@ -125,9 +125,16 @@ video{
 	flex-direction: column;
 	gap: 12px;
 	margin-top: 24px;
-	max-width: 500px;
+	max-width: 550px;
 }
 
+.about-content h1{
+	font-size: 36px;
+}
+
+.about-content p{
+	font-size: 18px;
+}
 footer{
 	background-color: aquamarine;
 	padding: 40px 70px;
