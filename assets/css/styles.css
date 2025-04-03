@@ -5,7 +5,8 @@
 }
 
 body{
-	font-family: fantasy;
+	font-family: "Montserrat";
+	scroll-behavior: smooth;
 }
 nav{
 	display: flex;
@@ -13,10 +14,9 @@ nav{
 	justify-content: space-between;
 	background-color: aquamarine;
 	position: fixed;
-	top: 0;
+	top: 2;
 	height: 80px;
 	z-index: 1;
-	margin-top: 2px;
 	padding: 20px 70px;
 	border: 5px solid black ;
 	border-radius: 8px;
@@ -42,6 +42,7 @@ ul{
 .nav-link:hover{
 	text-decoration: underline;
 	cursor: pointer;
+	transition: 0.6s ease-in-out;
 }
 
 .logo{
@@ -116,6 +117,8 @@ video{
 	height: 400px;
 	border: solid 5px aquamarine;
 	border-radius: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .about-content{
@@ -123,7 +126,7 @@ video{
 	justify-content: start;
 	align-items: start;
 	flex-direction: column;
-	gap: 12px;
+	gap: 24px;
 	margin-top: 24px;
 	max-width: 550px;
 }
@@ -135,11 +138,78 @@ video{
 .about-content p{
 	font-size: 18px;
 }
+
+.about-content li{
+	background-color: teal;
+	margin-top: 4px;
+	padding: 12px;
+	color: white;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.about-content li:hover{
+	transform: scale(1.05);
+}
+
+.menu{
+	display: none;
+}
+
+@media (max-width:992px) {
+	#about{
+		flex-direction: column;
+		gap: 24px;
+		align-items: center;
+
+	}
+
+	#about img{
+		order: ;
+	}
+
+	nav{
+		padding: 20px;
+		width: 100%;
+		margin-inline: 0;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.nav-links{
+		display: none;
+	}
+
+	.menu{
+		display: block;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+	}
+
+	footer{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		text-align: center;
+	}
+}
 footer{
-	background-color: aquamarine;
+	background-color: darkgray;
 	padding: 40px 70px;
 	display: flex;
 	justify-content: space-around;
+}
+
+footer ul li{
+	margin-top: 12px;
+	background-color: black;
+	color: white;
+	padding: 12px;
+	text-align: center;
 }
 
 .footer-tab h3{
@@ -160,4 +230,15 @@ footer img{
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+
+.footer-tab form{
+	display: flex;
+	align-items:start;
+ 	justify-content: start;
+	flex-direction: column;
+}
+
+ input, label, textarea{
+	width: 100%;
 }

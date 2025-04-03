@@ -11,10 +11,11 @@
 		<nav>
 			<div class="logo">Kamvelihle Fatman</div>
 			<ul class="nav-links">
-				<li class="nav-link">Home</li>
-				<li class="nav-link">About</li>
-				<li class="nav-link">Contact</li>
+				<a href="#hero"><li class="nav-link">Home</li></a>
+				<a href="#about"><li class="nav-link">About</li></a>
+				<a href="#contact"><li class="nav-link">Contact</li></a>
 			</ul>
+			<img class="menu" src="assets/images/menu.png" alt="Menu">
 		</nav>
 		<section id="hero">
 			<video autoplay playsinline muted loop id="bg-video">
@@ -30,18 +31,30 @@
 	<main>
 		<section id="about">
 			<div class="about-content">
+				<div>
 				<h1>Hi, I'm Kamva</h1>
 				<p>
 					I'm a tech enthusiast who enjoys building new things and seeing abstract visions come to life. I’m always looking for creative ways to solve problems, whether it’s through tech or just in everyday life.
-					Outside of coding, I enjoy watching sports like soccer and cricket, reading a book, and playing chess.
-
-
+					Outside of coding, I enjoy watching sports like soccer and cricket, reading books, and playing chess.
 				</p>
-			<a class="button" href="#contact">Let's Connect</a>
+			</div>
+
+				<div>
+				<h2>Fun Facts About Me...</h2>
+				<ul>
+					<li>🎵 <strong>Favorite Music Genre:</strong> I vibe with anything, but Deephouse is my go-to when coding.</li>
+					<li>🍕 <strong>Favorite food:</strong> A good home-cooked meal </li>
+					<li>🎮 <strong>Favorite Game:</strong> Chess (obviously 😆), but FIFA is a close second.</li>
+					<li>🚀 If I wasn't into tech, I'd probably be a business analyst or something...</li>
+				</ul>
+			</div>
+			<!-- <a class="button" href="#contact">Let's Connect</a> -->
 			</div>
 
 			<img src="assets/images/ai_image.png" alt="Kamva Profile Image"/>
 		</section>
+
+	</main>
 
 		<footer id="contact">
 			<div class="footer-tab">
@@ -70,9 +83,14 @@
 			</div>
 
 			<div class="footer-tab">
-				<div style="width: 100%"><iframe width="100%" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=50%20nkapuka%20new%20brighton+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">gps drone</a></iframe></div>
+				<h3>Contact Me</h3>
+				<form>
+					<label>Email</label>
+					<input placeholder="Enter your email" name="email" type="email" id="email" />
+					<label>Message</label>
+					<textarea name="message" id="message"></textarea>
+				</form>
 			</div>
 		</footer>
-	</main>
 </body>
 </html>
